@@ -25,7 +25,7 @@ void property_override(const std::vector<std::string> &props, char const value[]
 std::map<std::string, std::string> load_config() {
     std::map<std::string, std::string> config;
 
-    if (std::ifstream file("/system/etc/ih8sn.conf"); file.good()) {
+    if (std::ifstream file("/vendor/etc/ih8sn.conf"); file.good()) {
         std::string line;
 
         while (std::getline(file, line)) {
